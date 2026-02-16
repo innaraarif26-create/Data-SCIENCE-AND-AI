@@ -75,7 +75,7 @@ export async function checkAPIAvailability() {
     });
 
     return response.ok || response.status === 503;
-  } catch (error) {
+  } catch {
     return false;
   }
 }
